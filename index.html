@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap">
+
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="govuk-form-body">
+            <div class="govuk-stepper" role="list" aria-label="Kroky formulára">
+                <div class="govuk-step completed" role="listitem" aria-label="Krok 1 z 3">
+                    <span class="govuk-number">1</span>
+                    <span class="govuk-check">✔</span>
+                </div>
+                <div class="govuk-line"></div>
+                <div class="govuk-step active" role="listitem" aria-current="step" aria-label="Krok 2 z 3">
+                    <span class="govuk-number">2</span>
+                    <span class="govuk-check">✔</span>
+                </div>
+                <div class="govuk-line"></div>
+                <div class="govuk-step" role="listitem" aria-label="Krok 3 z 3">
+                    <span class="govuk-number">3</span>
+                    <span class="govuk-check">✔</span>
+                </div>
+                </div>
+
+            <div class="govuk-margin">
+                <div class="govuk-centered">
+                    
+                    <div class="govuk-form1">
+                        
+                        <div class="govuk-textarea">
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-name">
+                                    Meno
+                                    <span class="govuk-body-s">(nepovinné)</span>
+                                </label>
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-name" name="default" type="text">
+                                </div>
+                            </div>
+
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-surname">
+                                    Priezvisko
+                                    <span class="idsk-required">*</span>
+                                </label>
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-surname" name="default" type="text" data-required>
+                                </div>
+                                <p class="govuk-error-message" role="alert">Prosím vyplňte toto pole</p>
+                            </div>
+                        </div>
+
+                        <div class="govuk-form-group govuk-input-component">
+
+                            <label class="govuk-label  govuk-body-m" for="input-email">
+                                E-mail
+                                <span class="govuk-body-s">(nepovinné)</span>
+                            </label>
+                            <div class="govuk-input-container">
+                                <input class="govuk-input  "  id="input-email" name="default" type="email">
+                            </div>
+                        </div>
+                        
+                         <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset">
+                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                Občianstvo <span class="idsk-required">*</span>
+                                </legend>
+                                <div id="waste-hint" class="govuk-hint">
+                                Môžte zvoliť maximálne 2 položky
+                                </div>
+                                <p class="govuk-error-message" role="alert">
+                                Prosím vyberte aspoň jednu možnosť
+                                </p>
+                                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="citizen-1" type="checkbox" value="slovak" data-required>
+                                    <label class="govuk-label govuk-checkboxes__label" for="citizen-1">Slovenské</label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="citizen-2" type="checkbox" value="polish">
+                                    <label class="govuk-label govuk-checkboxes__label" for="citizen-2">Poľské</label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="citizen-3" type="checkbox" value="czech">
+                                    <label class="govuk-label govuk-checkboxes__label" for="citizen-3">České</label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="citizen-4" type="checkbox" value="unknown">
+                                    <label class="govuk-label govuk-checkboxes__label" for="citizen-4">Neznáme</label>
+                                </div>
+                                </div>
+                            </fieldset>
+                            </div>
+                        
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="select-1">
+                                Kraj
+                                <span class="govuk-body-s">(Nepovinné)</span>
+                            </label>
+                            <select class="govuk-select" id="select-1" name="select-1">
+                                <option value="" selected disabled hidden>-- Vyberte možnosť --</option>
+                                <option value="1">Banskobystrický</option>
+                                <option value="2">Bratislavský</option>
+                                <option value="3">Košický</option>
+                                <option value="4">Nitriansky</option>
+                                <option value="5">Prešovský</option>
+                                <option value="6">Trenčiansky</option>
+                                <option value="7">Trnavský</option>
+                                <option value="8">Žilinský</option>
+                            </select>
+                        </div>
+                        
+                        <div class="govuk-buttons-area">
+
+                            <button type="submit" class="govuk-button govuk-button__basic" data-module="govuk-button">
+                                    Ďalej <span>◯</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="govuk-form2">
+                        <div class="govuk-textarea">
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-name">
+                                    Meno
+                                    <span class="govuk-body-s">(nepovinné)</span>
+                                </label>
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-name" name="default" type="text">
+                                </div>
+                            </div>
+
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-surname">
+                                    Priezvisko
+                                    <span class="idsk-required">*</span>
+                                </label>
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-surname" name="default" type="text" data-required>
+                                </div>
+                                <p class="govuk-error-message" role="alert">Vyplňte prosím toto pole</p>
+                            </div>
+                        </div>
+
+                        <div class="govuk-form-group govuk-input-component">
+
+                            <label class="govuk-label  govuk-body-m" for="input-email">
+                                E-mail
+                                <span class="govuk-body-s">(nepovinné)</span>
+                            </label>
+                            <div class="govuk-input-container">
+                                <input class="govuk-input  "  id="input-email" name="default" type="email">
+                            </div>
+                        </div>
+
+                       <div class="govuk-buttons-area">
+                            <button type="submit" class="govuk-button govuk-button-back govuk-button__basic" data-module="govuk-button">
+                            Späť
+                            </button>
+
+                            <button type="submit" class="govuk-button govuk-button__basic" data-module="govuk-button">
+                            Ďalej <span>◯</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="govuk-form3">
+
+                        <div class="govuk-textarea">
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-name">
+                                    Meno
+                                    <span class="govuk-body-s">(nepovinné)</span>
+                                </label>
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-name" name="default" type="text">
+                                </div>
+                            </div>
+
+                            <div class="govuk-form-group govuk-input-component">
+
+                                <label class="govuk-label  govuk-body-m" for="input-surname">
+                                    Priezvisko
+                                    <span class="idsk-required">*</span>
+                                </label>
+                            
+                                <div class="govuk-input-container">
+                                    <input class="govuk-input  "  id="input-surname" name="default" type="text" data-required>
+                                </div>
+                                <p class="govuk-error-message" role="alert">Vyplňte prosím toto pole</p>
+                            </div>
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="select-1">
+                                Kraj
+                                <span class="govuk-body-s">(Nepovinné)</span>
+                            </label>
+                            <select class="govuk-select" id="select-1" name="select-1">
+                                <option value="" selected disabled hidden>-- Vyberte možnosť --</option>
+                                <option value="1">Banskobystrický</option>
+                                <option value="2">Bratislavský</option>
+                                <option value="3">Košický</option>
+                                <option value="4">Nitriansky</option>
+                                <option value="5">Prešovský</option>
+                                <option value="6">Trenčiansky</option>
+                                <option value="7">Trnavský</option>
+                                <option value="8">Žilinský</option>
+                            </select>
+                        </div>
+                        <div class="govuk-buttons-area">
+                            <button type="submit" class="govuk-button govuk-button-back govuk-button__basic" data-module="govuk-button">
+                            Späť
+                            </button>
+
+                            <button type="submit" class="govuk-button govuk-button__basic" data-module="govuk-button">
+                            Odoslať <span>◯</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="govuk-ending">
+                        <div>
+                            <h1>Ďakujeme Vám za vyplnenie formulára</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>

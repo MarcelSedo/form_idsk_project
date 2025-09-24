@@ -1,0 +1,242 @@
+/* Začíname s celučkým bodíčkom a potom mardžiníkom na formuláre */
+.govuk-form-body {
+    padding-top: 50px;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 19px;
+    background: #fff;
+    color: #0b0c0c;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.govuk-margin {
+    margin: 50px 40px;
+}
+
+/* A ideme na stepperík, v rámci ktorého si zadefinujeme aj zobrazovanie formov - s týmto budeme ďalej pracovať v script.js */
+
+.govuk-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0; 
+    width: 400px;
+    margin-left: 10px;
+}
+
+.govuk-step {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.govuk-step .govuk-check {
+    display: none; 
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.govuk-step.completed {
+    background: #078814;
+    border-color: #078814;
+}
+
+.govuk-step.completed .govuk-number {
+    display: none;
+}
+.govuk-step.completed .govuk-check {
+    display: block;
+}
+
+.govuk-line {
+    flex: 1;
+    height: 1px;
+    background: #000;
+}
+.govuk-form1,
+.govuk-form2,
+.govuk-form3,
+.govuk-ending {
+    display: none;
+}
+
+.govuk-form-active {
+    display: block;
+}
+
+/* začíname s jednotlivými prvkami */
+
+.govuk-textarea {
+    display: flex;
+    gap: 2rem;  
+    margin-bottom: 15px;
+}
+
+.govuk-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.govuk-checkboxes__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.govuk-checkboxes__input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 40px;
+    height: 40px;
+    border: 2px solid #424242;
+    border-radius: 5px; 
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+.govuk-checkboxes__input:checked {
+    background-color: #078814; 
+    border-color: #078814;
+}
+
+.govuk-checkboxes__input:checked::after {
+    content: "✔";
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.govuk-checkboxes__item--disabled .govuk-label {
+  color: #757575;
+  cursor: not-allowed;
+}
+
+.govuk-checkboxes__item--disabled .govuk-checkboxes__input {
+  border-color: #757575;
+  background-color: #f3f2f1;
+}
+
+.govuk-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.govuk-input {
+    border: 2px solid #424242;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    height: 1.6rem; 
+    font-size: 1rem; 
+    padding: 0.5rem; 
+}
+
+.govuk-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 340px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid #424242;
+    border-radius: 4px;
+    height: 2.8rem;
+    font-size: 1rem; 
+    padding: 0.5rem;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23424242' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1rem;
+}
+.govuk-checkboxes__item {
+  margin: 1rem 0;
+}
+
+.idsk-required {
+    color: #C3112B;
+}
+
+.govuk-body-s {
+    font-weight: 300;
+    color: #757575;
+}
+
+.govuk-hint {
+   color: #757575;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.govuk-error-message {
+  display: none;
+  color: #C3112B;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.govuk-input.error,
+.govuk-select.error {
+  border-color: #C3112B;
+}
+
+/*A na záver buttončeky*/
+
+.govuk-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #126DFF;
+    color: #fff;
+    border: 4px solid #126DFF;
+}
+
+.govuk-button:hover {
+    background: #003078;
+}
+
+.govuk-button-back {
+    background: #EFF5FE;
+    color: #072C66;
+    border: 4px solid #126DFF;
+}
+
+.govuk-button-back:hover {
+    background: #EFF5FE;
+    border: 4px solid #072C66;
+}
+
+.govuk-buttons-area {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem; 
+}
+
+.govuk-ending h1 {
+    font-size: 45px; 
+    text-align: center; 
+}
